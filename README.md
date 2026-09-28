@@ -1,7 +1,7 @@
 # 🧪 Bootcamp QA: Fundamentos de Testes com Pytest
 
-Bem-vindo ao repositório prático do Bootcamp de Qualidade de Software! 
-Neste projeto, vais aprender e aplicar técnicas de testes de Caixa Preta (como Análise de Valor Limite) e automatizar a tua estratégia utilizando o framework **Pytest** em Python.
+Bem-vindos ao repositório prático do Bootcamp de Qualidade de Software!
+Neste projeto, vão aprender e aplicar técnicas de testes de Caixa Preta (como Análise de Valor Limite) e automatizar a vossa estratégia utilizando o framework **Pytest** em Python.
 
 ---
 
@@ -13,7 +13,7 @@ Começaremos com uma abordagem mais simples (e repetitiva) e evoluiremos para t�
 
 ## 🌳 Navegando pelas Branches (Roteiro de Aprendizagem)
 
-Este repositório está dividido em **branches** (ramificações). Cada branch representa uma fase diferente do nosso aprendizado. Podes mudar de branch utilizando o comando `git checkout <nome-da-branch>` ou através da interface do GitHub.
+Este repositório está dividido em **branches** (ramificações). Cada branch representa uma fase diferente do nosso aprendizado. Podem mudar de branch utilizando o comando `git checkout <nome-da-branch>` ou através da interface do GitHub.
 
 ### 1️⃣ Branch: `main` (O Início)
 * **O que tem aqui:** A função inicial do desenvolvedor (`validador_conta.py`), os cenários de teste pensados de forma intuitiva, e a implementação de testes Pytest da forma mais básica (um teste para cada cenário, com repetição de código).
@@ -29,13 +29,39 @@ Este repositório está dividido em **branches** (ramificações). Cada branch r
 
 ### 4️⃣ Branch: `feat/desafio-extra` (Modo Full-Stack)
 * **O que tem aqui:** A resolução do desafio da funcionalidade `calcular_desconto`.
-* **O que aprender:** Aplicação completa do que foi aprendido. Vais encontrar a lógica de negócio implementada, os cenários baseados em Valor Limite/Partição de Equivalência, e os testes escritos das 3 formas diferentes (Direto, Parametrize e Fixtures) para efeitos de comparação.
+* **O que aprender:** Aplicação completa do que foi aprendido. Encontrarão a lógica de negócio implementada, os cenários baseados em Valor Limite/Partição de Equivalência, e os testes escritos das 3 formas diferentes (Direto, Parametrize e Fixtures) para efeitos de comparação.
 
 ---
 
+## 🧩 Desafio Extra para a Aula
+
+Nesta branch, o ficheiro `src/tests/cenários/cenarios_desafio_aluno.txt`
+apresenta um novo exercício de validação de transferências bancárias. Ele
+define o contrato, as regras e os cenários, mas não inclui implementação nem
+testes de referência: a proposta é que vocês desenvolvam ambos, aplicando
+`@pytest.mark.parametrize` e fixtures.
+
+Os exemplos de desconto e de validação de cliente premium continuam disponíveis
+como material de estudo; são independentes deste desafio.
+
+## 🛠️ Atividade Completa: Implementar e Testar
+
+A atividade de saque está organizada em etapas para vocês seguirem:
+
+1. Ler os requisitos e critérios de aceite em
+   `src/tech/angelofdiasg/qabank/operacoes/requisito_atividade_saque.txt`.
+2. Implementar a função inicial em
+   `src/tech/angelofdiasg/qabank/operacoes/validar_saque.py`.
+3. Escrever os cenários manualmente em
+   `src/tests/cenários/cenarios_atividade_saque.txt`.
+4. Completar os testes em
+   `src/tests/tests_validar_saque/test_validar_saque.py`, usando o
+   `parametrize` e a fixture já preparados. Os testes-esqueleto estão ignorados
+   até vocês removerem os marcadores de skip.
+
 ## 🚀 Como Executar os Testes
 
-Para executar os testes em qualquer uma das branches, certifica-te de que estás na raiz do projeto e executa o seguinte comando no terminal:
+Para executar os testes em qualquer uma das branches, certifiquem-se de que estão na raiz do projeto e executem o seguinte comando no terminal:
 
 `python -m pytest -v`
 
